@@ -46,6 +46,30 @@ body {
     --button-hover-space: #1a237e;
     --header-bg-space: #1a237e;
     --header-text-space: #e8eaf6;
+
+      /* Sea Theme */
+      --bg-color-sea: #b3e5fc;    /* Light blue */
+      --text-color-sea: #01579b;   /* Dark blue */
+      --primary-color-sea: #03a9f4;  /* Bright blue */
+      --secondary-color-sea: #ffeb3b; /* Yellow (like sun/sand) */
+      --card-bg-sea: #e1f5fe;    /* Very light blue */
+      --button-bg-sea: #03a9f4;
+      --button-text-sea: #ffffff;
+      --button-hover-sea: #0288d1;  /* Darker blue hover */
+      --header-bg-sea: #01579b;
+      --header-text-sea: #e1f5fe;
+  
+      /* Playground Theme */
+      --bg-color-playground: #fff9c4; /* Pale yellow */
+      --text-color-playground: #d84315; /* Deep orange/brown */
+      --primary-color-playground: #ff7043; /* Bright orange */
+      --secondary-color-playground: #4caf50; /* Green (like grass) */
+      --card-bg-playground: #fffde7; /* Very pale yellow */
+      --button-bg-playground: #ff7043;
+      --button-text-playground: #ffffff;
+      --button-hover-playground: #f4511e; /* Darker orange hover */
+      --header-bg-playground: #d84315;
+      --header-text-playground: #fffde7;
 }
 
 /* --- Theme Application --- */
@@ -89,6 +113,33 @@ body.theme-space .theme-switcher button.active { border-color: var(--secondary-c
 body.theme-space #reading-view, body.theme-space #question-view { background-color: var(--card-bg-space); border-color: var(--primary-color-space); }
 body.theme-space #correct-answer { background-color: var(--secondary-color-space); color: #333; } /* Darker text on yellow */
 
+/* Sea Theme Rules */
+body.theme-sea {
+    background-color: var(--bg-color-sea);
+    color: var(--text-color-sea);
+    /* Optional: background-image: url('images/sea_bubbles.png'); */
+}
+body.theme-sea header { background-color: var(--header-bg-sea); color: var(--header-text-sea); }
+body.theme-sea #comprehension-list li { background-color: var(--card-bg-sea); border-left-color: var(--primary-color-sea); }
+body.theme-sea button { background-color: var(--button-bg-sea); color: var(--button-text-sea); }
+body.theme-sea button:hover:not(:disabled) { background-color: var(--button-hover-sea); }
+body.theme-sea .theme-switcher button.active { border-color: var(--secondary-color-sea); }
+body.theme-sea #reading-view, body.theme-sea #question-view { background-color: var(--card-bg-sea); border-color: var(--primary-color-sea); }
+body.theme-sea #correct-answer { background-color: var(--secondary-color-sea); color: var(--text-color-sea); } /* Dark text on yellow */
+
+/* Playground Theme Rules */
+body.theme-playground {
+    background-color: var(--bg-color-playground);
+    color: var(--text-color-playground);
+     /* Optional: background-image: url('images/playground_pattern.png'); */
+}
+body.theme-playground header { background-color: var(--header-bg-playground); color: var(--header-text-playground); }
+body.theme-playground #comprehension-list li { background-color: var(--card-bg-playground); border-left-color: var(--primary-color-playground); }
+body.theme-playground button { background-color: var(--button-bg-playground); color: var(--button-text-playground); }
+body.theme-playground button:hover:not(:disabled) { background-color: var(--button-hover-playground); }
+body.theme-playground .theme-switcher button.active { border-color: var(--secondary-color-playground); }
+body.theme-playground #reading-view, body.theme-playground #question-view { background-color: var(--card-bg-playground); border-color: var(--primary-color-playground); }
+body.theme-playground #correct-answer { background-color: var(--secondary-color-playground); color: #ffffff; } /* White text on green */
 
 /* --- Layout & General Styles --- */
 header {

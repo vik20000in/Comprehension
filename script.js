@@ -370,7 +370,7 @@ document.addEventListener('DOMContentLoaded', () => {
      * Applies the selected theme.
      * (No changes needed in this function)
      */
-     function applyTheme(themeName) {
+    function applyTheme(themeName) {
         // Ensure themeName is a string and potentially sanitize/validate it
         if (typeof themeName !== 'string' || !themeName.match(/^theme-[a-zA-Z0-9-]+$/)) {
             console.warn("Invalid theme name provided:", themeName);
@@ -384,13 +384,17 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.classList.toggle('active', btn.dataset.theme === themeName);
         });
 
-        // Persist theme choice
+        // --- Persist theme choice to localStorage ---
         try {
-            localStorage.setItem('comprehensionTheme', themeName);
+            localStorage.setItem('comprehensionTheme', themeName); // Use a descriptive key
+            console.log('Theme saved:', themeName); // Optional: for debugging
         } catch (e) {
-            console.warn("Could not save theme to localStorage:", e); // Handle potential storage errors (e.g., private browsing)
+            // Handle potential errors (e.g., storage full, private browsing mode)
+            console.warn("Could not save theme to localStorage:", e);
         }
+        // --- End of persistence code ---
      }
+
 
      /**
       * Loads the saved theme from localStorage or applies default.
@@ -399,12 +403,21 @@ document.addEventListener('DOMContentLoaded', () => {
      function loadTheme() {
         let savedTheme = 'theme-default'; // Default theme
         try {
-            savedTheme = localStorage.getItem('comprehensionTheme') || 'theme-default';
+            // --- Retrieve theme from localStorage ---
+            const storedTheme = localStorage.getItem('comprehensionTheme');
+            if (storedTheme) {
+                savedTheme = storedTheme;
+                console.log('Theme loaded:', savedTheme); // Optional: for debugging
+            }
+            // --- End of retrieval code ---
         } catch (e) {
+             // Handle potential errors reading from storage
              console.warn("Could not read theme from localStorage:", e);
         }
+        // Apply the loaded or default theme
         applyTheme(savedTheme);
      }
+
 
     // --- Event Listeners ---
 
