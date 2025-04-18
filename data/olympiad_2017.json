@@ -1,0 +1,36 @@
+[
+  {
+    "id": "oly_2017_text_1",
+    "title": "The Mysterious Footprints",
+    "type": "text",
+    "source": "Olympiad 2017",
+    "content": "One morning, Riya woke up to find strange footprints in her garden. The footprints were small, round, and seemed to go in circles around her favorite rose bush. Curious, Riya decided to investigate. She measured the footprints and compared them to those of her cat, but they were much smaller. She asked her neighbors if they had seen anything unusual, but no one had. That night, Riya stayed up late, watching the garden from her window. Just as the clock struck midnight, she saw a tiny hedgehog waddling around the rose bush, leaving behind the same round footprints. Riya smiled, happy to have solved the mystery.",
+    "questions": [
+      {
+        "id": "q1",
+        "questionText": "What did Riya find in her garden one morning?",
+        "correctAnswer": "Strange footprints."
+      },
+      {
+        "id": "q2",
+        "questionText": "How did Riya try to solve the mystery?",
+        "correctAnswer": "She measured the footprints and asked her neighbors."
+      },
+      {
+        "id": "q3",
+        "questionText": "Who was making the footprints?",
+        "correctAnswer": "A hedgehog."
+      },
+      {
+        "id": "q4",
+        "questionText": "When did Riya discover the truth?",
+        "correctAnswer": "At midnight."
+      },
+      {
+        "id": "q5",
+        "questionText": "What was Riya’s reaction after solving the mystery?",
+        "correctAnswer": "She was happy."
+      }
+    ]
+  }
+]
