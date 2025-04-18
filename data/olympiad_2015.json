@@ -1,0 +1,46 @@
+[
+    {
+      "id": "oly_2015_text_1",
+      "title": "The Thirsty Crow",
+      "type": "text",
+      "source": "Olympiad 2015",
+      "content": "A crow was very thirsty. He flew here and there looking for water, but he couldn't find any. At last, he saw a pitcher with a little water at the bottom. He tried to drink it, but his beak couldn't reach the water. He thought for a while. Then, he saw some pebbles nearby. He picked them up one by one and dropped them into the pitcher. The water level rose, and the crow could finally drink the water.",
+      "questions": [
+        {
+          "id": "q1",
+          "questionText": "Why was the crow flying here and there?",
+          "correctAnswer": "He was looking for water because he was thirsty."
+        },
+        {
+          "id": "q2",
+          "questionText": "What did the crow find?",
+          "correctAnswer": "A pitcher with a little water at the bottom."
+        },
+        {
+          "id": "q3",
+          "questionText": "How did the crow manage to drink the water?",
+          "correctAnswer": "He dropped pebbles into the pitcher to raise the water level."
+        }
+      ]
+    },
+    {
+      "id": "oly_2015_pic_1",
+      "title": "Classroom Scene",
+      "type": "picture",
+      "source": "Olympiad 2015",
+      "content": "images/classroom_scene_2015.png",
+      "questions": [
+        {
+          "id": "q1",
+          "questionText": "How many students are wearing glasses?",
+          "correctAnswer": "One."
+        },
+        {
+          "id": "q2",
+          "questionText": "What subject is written on the blackboard?",
+          "correctAnswer": "Mathematics / Maths."
+        }
+      ]
+    }
+  ]
+  

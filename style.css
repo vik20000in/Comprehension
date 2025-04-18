@@ -1,0 +1,290 @@
+/* Basic Reset & Body */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Arial', sans-serif; /* Kid-friendly font */
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding-bottom: 50px; /* Space for footer */
+}
+
+/* --- Theme Variables --- */
+:root {
+    --bg-color-default: #e0f7fa;
+    --text-color-default: #004d40;
+    --primary-color-default: #00796b;
+    --secondary-color-default: #ffab40;
+    --card-bg-default: #ffffff;
+    --button-bg-default: #00796b;
+    --button-text-default: #ffffff;
+    --button-hover-default: #004d40;
+    --header-bg-default: #004d40;
+    --header-text-default: #e0f7fa;
+
+    --bg-color-jungle: #a5d6a7;
+    --text-color-jungle: #1b5e20;
+    --primary-color-jungle: #388e3c;
+    --secondary-color-jungle: #ffb300;
+    --card-bg-jungle: #e8f5e9;
+    --button-bg-jungle: #388e3c;
+    --button-text-jungle: #ffffff;
+    --button-hover-jungle: #1b5e20;
+    --header-bg-jungle: #1b5e20;
+    --header-text-jungle: #e8f5e9;
+
+    --bg-color-space: #303f9f;
+    --text-color-space: #e8eaf6;
+    --primary-color-space: #5c6bc0;
+    --secondary-color-space: #ffeb3b;
+    --card-bg-space: #1a237e;
+    --button-bg-space: #5c6bc0;
+    --button-text-space: #ffffff;
+    --button-hover-space: #1a237e;
+    --header-bg-space: #1a237e;
+    --header-text-space: #e8eaf6;
+}
+
+/* --- Theme Application --- */
+body.theme-default {
+    background-color: var(--bg-color-default);
+    color: var(--text-color-default);
+}
+body.theme-default header { background-color: var(--header-bg-default); color: var(--header-text-default); }
+body.theme-default #comprehension-list li { background-color: var(--card-bg-default); border-left-color: var(--primary-color-default); }
+body.theme-default button { background-color: var(--button-bg-default); color: var(--button-text-default); }
+body.theme-default button:hover:not(:disabled) { background-color: var(--button-hover-default); }
+body.theme-default .theme-switcher button.active { border-color: var(--secondary-color-default); }
+body.theme-default #reading-view, body.theme-default #question-view { background-color: var(--card-bg-default); border-color: var(--primary-color-default); }
+body.theme-default #correct-answer { background-color: var(--secondary-color-default); color: var(--text-color-default); }
+
+
+body.theme-jungle {
+    background-color: var(--bg-color-jungle);
+    color: var(--text-color-jungle);
+    /* Add background image maybe? background-image: url('images/jungle_bg.png'); */
+}
+body.theme-jungle header { background-color: var(--header-bg-jungle); color: var(--header-text-jungle); }
+body.theme-jungle #comprehension-list li { background-color: var(--card-bg-jungle); border-left-color: var(--primary-color-jungle); }
+body.theme-jungle button { background-color: var(--button-bg-jungle); color: var(--button-text-jungle); }
+body.theme-jungle button:hover:not(:disabled) { background-color: var(--button-hover-jungle); }
+body.theme-jungle .theme-switcher button.active { border-color: var(--secondary-color-jungle); }
+body.theme-jungle #reading-view, body.theme-jungle #question-view { background-color: var(--card-bg-jungle); border-color: var(--primary-color-jungle); }
+body.theme-jungle #correct-answer { background-color: var(--secondary-color-jungle); color: var(--text-color-jungle); }
+
+
+body.theme-space {
+    background-color: var(--bg-color-space);
+    color: var(--text-color-space);
+     /* Add background image maybe? background-image: url('images/space_bg.png'); */
+}
+body.theme-space header { background-color: var(--header-bg-space); color: var(--header-text-space); }
+body.theme-space #comprehension-list li { background-color: var(--card-bg-space); border-left-color: var(--primary-color-space); color: var(--text-color-space);}
+body.theme-space button { background-color: var(--button-bg-space); color: var(--button-text-space); }
+body.theme-space button:hover:not(:disabled) { background-color: var(--button-hover-space); }
+body.theme-space .theme-switcher button.active { border-color: var(--secondary-color-space); }
+body.theme-space #reading-view, body.theme-space #question-view { background-color: var(--card-bg-space); border-color: var(--primary-color-space); }
+body.theme-space #correct-answer { background-color: var(--secondary-color-space); color: #333; } /* Darker text on yellow */
+
+
+/* --- Layout & General Styles --- */
+header {
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-size: 2em; /* Larger for TV */
+}
+
+.theme-switcher button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.theme-switcher button.active {
+    border-width: 3px; /* Make active theme obvious */
+    font-weight: bold;
+}
+
+main#app-container {
+    padding: 20px 40px; /* More padding for TV */
+    max-width: 1000px; /* Limit width on large screens */
+    margin: 20px auto;
+}
+
+/* View Management */
+.view {
+    display: none; /* Hide all views by default */
+    padding: 25px;
+    border: 2px solid; /* Use theme color */
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.view.active-view {
+    display: block; /* Show only the active view */
+}
+
+/* List View */
+#comprehension-list {
+    list-style: none;
+    padding: 0;
+}
+
+#comprehension-list li {
+    padding: 20px;
+    margin-bottom: 15px;
+    border-left: 5px solid; /* Use theme color */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-size: 1.4em; /* Larger text */
+}
+
+#comprehension-list li:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+#comprehension-list li.loading {
+    font-style: italic;
+    text-align: center;
+    cursor: default;
+    border: none;
+    background: none;
+}
+#comprehension-list li:hover.loading {
+    transform: none;
+    box-shadow: none;
+}
+
+/* Reading View */
+#reading-view h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+#comprehension-content {
+    margin-bottom: 30px;
+    font-size: 1.3em; /* Larger text for reading */
+    max-height: 60vh; /* Limit height to prevent excessive scrolling */
+    overflow-y: auto; /* Allow scrolling if content is long */
+    padding-right: 10px; /* Space for scrollbar */
+}
+
+#comprehension-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Question View */
+#question-view h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+#question-text {
+    font-size: 1.4em; /* Large question text */
+    margin-bottom: 25px;
+    min-height: 50px; /* Ensure space even for short questions */
+}
+
+.answer-area {
+    margin-bottom: 25px;
+    padding: 15px;
+    border-radius: 5px;
+    /* background-color: rgba(0, 0, 0, 0.05); Slightly different background */
+}
+
+.answer-area i {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+#correct-answer {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.3em;
+    transition: opacity 0.3s ease;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Buttons */
+button {
+    padding: 12px 25px; /* Larger buttons for TV remote */
+    border: none;
+    border-radius: 25px; /* Rounded buttons */
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.2s ease;
+    margin: 5px;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.action-button {
+    display: block;
+    margin: 10px auto; /* Center action buttons */
+    min-width: 180px;
+}
+
+.nav-button {
+    /* Style for navigation buttons */
+}
+
+.back-button {
+    float: left;
+    margin-bottom: 15px;
+}
+
+/* Utility Classes */
+.hidden {
+    display: none !important; /* Force hide */
+    opacity: 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    font-size: 1em;
+    position: fixed; /* Keep footer visible */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(200, 200, 200, 0.8); /* Semi-transparent */
+    backdrop-filter: blur(5px); /* Optional: blur background behind footer */
+}
+
+/* TV Specific Considerations (Example - Focus) */
+button:focus, #comprehension-list li:focus {
+    outline: 3px solid orange; /* Clear focus indicator for remote navigation */
+    box-shadow: 0 0 10px orange;
+}

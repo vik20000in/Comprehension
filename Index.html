@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Comprehension Fun</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-default"> <!-- Default theme -->
+
+    <header>
+        <h1>Comprehension Corner</h1>
+        <div class="theme-switcher">
+            <span>Theme:</span>
+            <button data-theme="theme-default" class="active">Default</button>
+            <button data-theme="theme-jungle">Jungle</button>
+            <button data-theme="theme-space">Space</button>
+            <!-- Add more theme buttons -->
+        </div>
+    </header>
+
+    <main id="app-container">
+
+        <!-- View 1: List of Comprehensions -->
+        <section id="list-view" class="view active-view">
+            <h2>Choose a Story or Picture!</h2>
+            <ul id="comprehension-list">
+                <!-- List items will be added by JavaScript -->
+                <li class="loading">Loading comprehensions...</li>
+            </ul>
+        </section>
+
+        <!-- View 2: Reading Comprehension -->
+        <section id="reading-view" class="view">
+            <button class="nav-button back-button" data-target="list-view">&lt; Back to List</button>
+            <h2 id="comprehension-title"></h2>
+            <div id="comprehension-content">
+                <!-- Text or Image will be loaded here -->
+            </div>
+            <button id="start-questions-button" class="action-button">Start Questions</button>
+        </section>
+
+        <!-- View 3: Answering Questions -->
+        <section id="question-view" class="view">
+             <button class="nav-button back-button" data-target="reading-view">&lt; Back to Reading</button>
+            <h3 id="question-number"></h3>
+            <p id="question-text"></p>
+            <div class="answer-area">
+                <p><i>(Write your answer on your paper!)</i></p>
+                <button id="show-answer-button" class="action-button">Show Answer</button>
+                <p id="correct-answer" class="hidden"></p>
+            </div>
+            <div class="navigation-buttons">
+                <button id="prev-question-button" class="nav-button" disabled>&lt; Previous</button>
+                <button id="next-question-button" class="nav-button">Next Question &gt;</button>
+            </div>
+             <button id="finish-button" class="action-button hidden">Finish - Back to List</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Happy Learning!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
