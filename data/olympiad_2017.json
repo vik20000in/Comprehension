@@ -32,5 +32,316 @@
         "correctAnswer": "She was happy."
       }
     ]
+  },
+  {
+    "id": "oly_2017_text_2",
+    "title": "King Metabo",
+    "type": "text",
+    "source": "Olympiad 2017",
+    "content": "King Metabo was a famous javelin thrower. One day, he went out hunting with his daughter, Camille, on his back. All of a sudden, the king was attacked by a band of enemies. He had to flee from them until he came to a fast flowing river, which he was unable to swim across because of his daughter on his back. It seemed as if he was lost until he thought of a way out. Tying his daughter to his javelin, he hurled it with all his strength to the other side of the river; then he dived into the water and swam across to where Camille was. His enemies were so amazed that they gave up the chase.",
+    "questions": [
+      {
+        "id": "q1",
+        "questionText": "King Metabo was well known for ______.",
+        "correctAnswer": "throwing javelin"
+      },
+      {
+        "id": "q2",
+        "questionText": "When was the king attacked by the enemies?",
+        "correctAnswer": "The king was attacked by the enemies when he went out hunting with his daughter."
+      }
+    ]
+  },{
+    "id": "oly_2017_text_1",
+    "title": "The Mysterious Footprints",
+    "type": "text",
+    "source": "Olympiad 2017",
+    "content": "One morning, Riya woke up to find strange footprints in her garden. The footprints were small, round, and seemed to go in circles around her favorite rose bush. Curious, Riya decided to investigate. She measured the footprints and compared them to those of her cat, but they were much smaller. She asked her neighbors if they had seen anything unusual, but no one had. That night, Riya stayed up late, watching the garden from her window. Just as the clock struck midnight, she saw a tiny hedgehog waddling around the rose bush, leaving behind the same round footprints. Riya smiled, happy to have solved the mystery.",
+    "questions": [
+      {
+        "id": "q1",
+        "questionText": "What did Riya find in her garden one morning?",
+        "correctAnswer": "Strange footprints."
+      },
+      {
+        "id": "q2",
+        "questionText": "How did Riya try to solve the mystery?",
+        "correctAnswer": "She measured the footprints and asked her neighbors."
+      },
+      {
+        "id": "q3",
+        "questionText": "Who was making the footprints?",
+        "correctAnswer": "A hedgehog."
+      },
+      {
+        "id": "q4",
+        "questionText": "When did Riya discover the truth?",
+        "correctAnswer": "At midnight."
+      },
+      {
+        "id": "q5",
+        "questionText": "What was Riya’s reaction after solving the mystery?",
+        "correctAnswer": "She was happy."
+      }
+    ]
+  },
+  {
+    "id": "oly_2017_text_2",
+    "title": "King Metabo",
+    "type": "text",
+    "source": "Olympiad 2017",
+    "content": "King Metabo was a famous javelin thrower. One day, he went out hunting with his daughter, Camille, on his back. All of a sudden, the king was attacked by a band of enemies. He had to flee from them until he came to a fast flowing river, which he was unable to swim across because of his daughter on his back. It seemed as if he was lost until he thought of a way out. Tying his daughter to his javelin, he hurled it with all his strength to the other side of the river; then he dived into the water and swam across to where Camille was. His enemies were so amazed that they gave up the chase.",
+    "questions": [
+      {
+        "id": "q1",
+        "questionText": "King Metabo was well known for ______.",
+        "correctAnswer": "throwing javelin"
+      },
+      {
+        "id": "q2",
+        "questionText": "When was the king attacked by the enemies?",
+        "correctAnswer": "The king was attacked by the enemies when he went out hunting with his daughter."
+      }
+    ]
+  },
+  {
+    "id": "oly_2017_text_3",
+    "title": "The Helpful Neighbour",
+    "type": "text",
+    "source": "ICSE Practice",
+    "content": "Mrs. Sen was worried because her garden was full of weeds. She tried to remove them, but it was too much work. Her neighbour, Mr. Roy, saw her struggling and offered to help. Together, they cleared the garden in a few hours. Mrs. Sen thanked Mr. Roy for his kindness.",
+    "questions": [
+      {
+        "id": "q1",
+        "questionText": "Why was Mrs. Sen worried?",
+        "correctAnswer": "Her garden was full of weeds."
+      },
+      {
+        "id": "q2",
+        "questionText": "Who helped Mrs. Sen?",
+        "correctAnswer": "Her neighbour, Mr. Roy."
+      },
+      {
+        "id": "q3",
+        "questionText": "How did they solve the problem?",
+        "correctAnswer": "They worked together to clear the garden."
+      }
+    ]
+  },
+  {
+    "id": "oly_2017_text_4",
+    "title": "The Lost Pencil",
+    "type": "text",
+    "source": "ICSE Practice",
+    "content": "Amit could not find his favourite pencil before the exam. He searched his bag and desk but it was missing. His friend Priya noticed his worry and lent him a pencil. Amit was grateful and promised to return it after the exam.",
+    "questions": [
+      {
+        "id": "q1",
+        "questionText": "What did Amit lose?",
+        "correctAnswer": "His favourite pencil."
+      },
+      {
+        "id": "q2",
+        "questionText": "Who helped Amit?",
+        "correctAnswer": "His friend Priya."
+      },
+      {
+        "id": "q3",
+        "questionText": "What did Amit promise?",
+        "correctAnswer": "To return the pencil after the exam."
+      }
+    ]
+  },
+  {
+    "id": "oly_2017_text_5",
+    "title": "The Rainy Day",
+    "type": "text",
+    "source": "ICSE Practice",
+    "content": "It was raining heavily and the roads were flooded. Rohan and his sister could not go to school. Instead, they spent the day reading books and playing indoor games. They enjoyed their unexpected holiday.",
+    "questions": [
+      {
+        "id": "q1",
+        "questionText": "Why could Rohan and his sister not go to school?",
+        "correctAnswer": "Because the roads were flooded due to heavy rain."
+      },
+      {
+        "id": "q2",
+        "questionText": "How did they spend their day?",
+        "correctAnswer": "They read books and played indoor games."
+      },
+      {
+        "id": "q3",
+        "questionText": "How did they feel about the holiday?",
+        "correctAnswer": "They enjoyed it."
+      }
+    ]
+  },
+  {
+    "id": "oly_2017_text_6",
+    "title": "The School Picnic",
+    "type": "text",
+    "source": "ICSE Practice",
+    "content": "The students of Class 6 went for a picnic to the city park. They played games, ate delicious food, and took many photographs. Their teachers made sure everyone was safe and happy. It was a memorable day for all.",
+    "questions": [
+      {
+        "id": "q1",
+        "questionText": "Where did the students go for a picnic?",
+        "correctAnswer": "To the city park."
+      },
+      {
+        "id": "q2",
+        "questionText": "What did the students do at the picnic?",
+        "correctAnswer": "They played games, ate food, and took photographs."
+      },
+      {
+        "id": "q3",
+        "questionText": "Who took care of the students?",
+        "correctAnswer": "Their teachers."
+      }
+    ]
+  },
+  {
+    "id": "oly_2017_text_7",
+    "title": "The New Library",
+    "type": "text",
+    "source": "ICSE Practice",
+    "content": "A new library opened in the town. It had books for children and adults. Maya visited the library every week to read storybooks. She loved the quiet and peaceful atmosphere.",
+    "questions": [
+      {
+        "id": "q1",
+        "questionText": "What opened in the town?",
+        "correctAnswer": "A new library."
+      },
+      {
+        "id": "q2",
+        "questionText": "Who visited the library every week?",
+        "correctAnswer": "Maya."
+      },
+      {
+        "id": "q3",
+        "questionText": "Why did Maya like the library?",
+        "correctAnswer": "Because it was quiet and peaceful."
+      }
+    ]
+  },
+  {
+    "id": "oly_2017_text_8",
+    "title": "The Science Project",
+    "type": "text",
+    "source": "ICSE Practice",
+    "content": "Rahul and his friends decided to make a volcano model for the science exhibition. They collected all the materials and worked together after school. Their project was appreciated by everyone at the exhibition.",
+    "questions": [
+      {
+        "id": "q1",
+        "questionText": "What did Rahul and his friends make?",
+        "correctAnswer": "A volcano model."
+      },
+      {
+        "id": "q2",
+        "questionText": "Why did they make the model?",
+        "correctAnswer": "For the science exhibition."
+      },
+      {
+        "id": "q3",
+        "questionText": "How was their project received?",
+        "correctAnswer": "It was appreciated by everyone."
+      }
+    ]
+  },
+  {
+    "id": "oly_2017_text_9",
+    "title": "The Helpful Dog",
+    "type": "text",
+    "source": "ICSE Practice",
+    "content": "Simi’s dog, Bruno, was very clever. One day, Simi lost her keys in the garden. Bruno sniffed around and found the keys under a bush. Simi hugged Bruno and gave him his favourite treat.",
+    "questions": [
+      {
+        "id": "q1",
+        "questionText": "What did Simi lose?",
+        "correctAnswer": "Her keys."
+      },
+      {
+        "id": "q2",
+        "questionText": "Who found the keys?",
+        "correctAnswer": "Her dog, Bruno."
+      },
+      {
+        "id": "q3",
+        "questionText": "What did Simi give Bruno?",
+        "correctAnswer": "His favourite treat."
+      }
+    ]
+  },
+  {
+    "id": "oly_2017_text_10",
+    "title": "The Magic Show",
+    "type": "text",
+    "source": "ICSE Practice",
+    "content": "A magician visited the school and performed amazing tricks. The students watched in awe as he pulled a rabbit out of a hat and made coins disappear. Everyone clapped loudly at the end of the show.",
+    "questions": [
+      {
+        "id": "q1",
+        "questionText": "Who visited the school?",
+        "correctAnswer": "A magician."
+      },
+      {
+        "id": "q2",
+        "questionText": "What did the magician pull out of a hat?",
+        "correctAnswer": "A rabbit."
+      },
+      {
+        "id": "q3",
+        "questionText": "How did the students react?",
+        "correctAnswer": "They clapped loudly."
+      }
+    ]
+  },
+  {
+    "id": "oly_2017_text_11",
+    "title": "The Broken Vase",
+    "type": "text",
+    "source": "ICSE Practice",
+    "content": "While playing indoors, Anil accidentally broke his mother’s favourite vase. He felt sorry and immediately told his mother the truth. His mother appreciated his honesty and forgave him.",
+    "questions": [
+      {
+        "id": "q1",
+        "questionText": "What did Anil break?",
+        "correctAnswer": "His mother’s favourite vase."
+      },
+      {
+        "id": "q2",
+        "questionText": "What did Anil do after breaking the vase?",
+        "correctAnswer": "He told his mother the truth."
+      },
+      {
+        "id": "q3",
+        "questionText": "How did his mother react?",
+        "correctAnswer": "She appreciated his honesty and forgave him."
+      }
+    ]
+  },
+  {
+    "id": "oly_2017_text_12",
+    "title": "The Annual Sports Day",
+    "type": "text",
+    "source": "ICSE Practice",
+    "content": "The Annual Sports Day was held at the school playground. Students participated in races, long jump, and relay events. Ritu won the first prize in the 100-metre race. Everyone cheered for the winners.",
+    "questions": [
+      {
+        "id": "q1",
+        "questionText": "Where was the Annual Sports Day held?",
+        "correctAnswer": "At the school playground."
+      },
+      {
+        "id": "q2",
+        "questionText": "Who won the first prize in the 100-metre race?",
+        "correctAnswer": "Ritu."
+      },
+      {
+        "id": "q3",
+        "questionText": "How did everyone react to the winners?",
+        "correctAnswer": "Everyone cheered for them."
+      }
+    ]
   }
 ]
